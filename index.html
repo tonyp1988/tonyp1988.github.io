@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Solar Project Job Application</title>
+  <style>
+    :root { --bg:#f4f4f4; --ink:#111; --muted:#555; --line:#ccc; --card:#fff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background:var(--bg); color:var(--ink); line-height:1.4; }
+    header { background:#000; color:#fff; padding:22px 18px 18px; text-align:center; }
+    header h1 { margin:0; font-size:1.25rem; letter-spacing:.04em; }
+    header p { margin:6px 0 0; font-size:.9rem; color:#ddd; }
+    form { max-width:640px; margin:0 auto; padding:16px 16px 48px; }
+    section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin:14px 0; }
+    h2 { margin:0 0 12px; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; background:#111; color:#fff;
+      padding:8px 10px; border-radius:6px; }
+    label { display:block; font-size:.78rem; font-weight:700; color:var(--muted); margin:10px 0 4px; }
+    input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number], select, textarea {
+      width:100%; padding:10px 12px; font-size:16px; border:1px solid #bbb; border-radius:6px; background:#fff;
+    }
+    textarea { min-height:72px; resize:vertical; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .row3 { display:grid; grid-template-columns:1.4fr .8fr .7fr .7fr; gap:8px; }
+    .checks { display:grid; grid-template-columns:1fr 1fr; gap:8px 12px; }
+    .check { display:flex; align-items:flex-start; gap:8px; font-size:.95rem; }
+    .check input { margin-top:3px; width:18px; height:18px; flex:0 0 18px; }
+    .note { font-size:.85rem; color:#333; background:#f0f0f0; padding:10px 12px; border-radius:6px; }
+    .actions { position:sticky; bottom:0; background:linear-gradient(transparent, var(--bg) 30%); padding:16px 0 8px; }
+    button { width:100%; background:#000; color:#fff; border:0; padding:14px; font-size:1.05rem; font-weight:700;
+      border-radius:8px; cursor:pointer; }
+    button:active { opacity:.85; }
+    footer { text-align:center; font-size:.72rem; color:#666; padding:8px 20px 28px; }
+    @media (max-width:520px) {
+      .row, .row3, .checks { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EMPLOYMENT APPLICATION</h1>
+    <p>Solar Project · Mass Hiring Event</p>
+  </header>
+
+  <form action="https://formsubmit.co/anthonyprisco10@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Solar Project Job Application" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_captcha" value="true" />
+    <input type="hidden" name="_next" value="https://tonyp1988.github.io/thanks.html" />
+    <input type="text" name="_honey" style="display:none" />
+
+    <section>
+      <h2>1 · Applicant Information</h2>
+      <div class="row">
+        <div><label>Legal first name *</label><input type="text" name="Legal First Name" required /></div>
+        <div><label>Legal last name *</label><input type="text" name="Legal Last Name" required /></div>
+      </div>
+      <label>Preferred name</label><input type="text" name="Preferred Name" />
+      <div class="row">
+        <div><label>Primary phone *</label><input type="tel" name="Primary Phone" required /></div>
+        <div><label>Email *</label><input type="email" name="Email" required /></div>
+      </div>
+      <label>Street address</label><input type="text" name="Street Address" />
+      <div class="row3">
+        <div><label>City</label><input type="text" name="City" /></div>
+        <div><label>State</label><input type="text" name="State" value="TX" /></div>
+        <div><label>ZIP</label><input type="text" name="ZIP" /></div>
+        <div></div>
+      </div>
+      <div class="row">
+        <div><label>Emergency contact name / relationship</label><input type="text" name="Emergency Contact" /></div>
+        <div><label>Emergency contact phone</label><input type="tel" name="Emergency Phone" /></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>2 · Position, Availability &amp; Pay</h2>
+      <label>Positions of interest (check all that apply)</label>
+      <div class="checks">
+        <label class="check"><input type="checkbox" name="Position[]" value="Solar Installer" /> Solar Installer</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="Electrician / Journeyman" /> Electrician / Journeyman</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="Laborer / Helper" /> Laborer / Helper</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="Equipment Operator" /> Equipment Operator</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="Foreman / Crew Lead" /> Foreman / Crew Lead</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="Safety / Quality" /> Safety / Quality</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="Warehouse / Logistics" /> Warehouse / Logistics</label>
+        <label class="check"><input type="checkbox" name="Position[]" value="CDL Driver / Haul" /> CDL Driver / Haul</label>
+      </div>
+      <div class="row">
+        <div><label>Earliest start date</label><input type="date" name="Earliest Start Date" /></div>
+        <div><label>Desired hourly / pay</label><input type="text" name="Desired Pay" /></div>
+      </div>
+      <div class="row">
+        <div><label>Hours available</label>
+          <select name="Hours Available">
+            <option value="">Select</option>
+            <option>Full-time</option>
+            <option>Full-time + overtime</option>
+            <option>Part-time</option>
+          </select>
+        </div>
+        <div><label>Willing to travel / relocate</label>
+          <select name="Travel / Relocate">
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Limited</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>3 · Work Eligibility &amp; Screening</h2>
+      <div class="row">
+        <div><label>Authorized to work in the U.S.? *</label>
+          <select name="Authorized to Work in US" required>
+            <option value="">Select</option><option>Yes</option><option>No</option>
+          </select>
+        </div>
+        <div><label>18 years of age or older? *</label>
+          <select name="18 or Older" required>
+            <option value="">Select</option><option>Yes</option><option>No</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div><label>Valid driver's license?</label>
+          <select name="Drivers License">
+            <option value="">Select</option><option>Yes</option><option>No</option>
+          </select>
+        </div>
+        <div><label>License class</label><input type="text" name="License Class" placeholder="C, A, etc." /></div>
+      </div>
+      <div class="row">
+        <div><label>CDL</label>
+          <select name="CDL">
+            <option>No</option><option>Class A</option><option>Class B</option><option>Class C</option>
+          </select>
+        </div>
+        <div><label>CDL endorsements</label><input type="text" name="CDL Endorsements" /></div>
+      </div>
+      <div class="row">
+        <div><label>Consent to background check &amp; drug screen? *</label>
+          <select name="Background and Drug Screen Consent" required>
+            <option value="">Select</option><option>Yes, I consent</option><option>No</option>
+          </select>
+        </div>
+        <div><label>Ever worked for this company?</label>
+          <input type="text" name="Previously Worked Here" placeholder="No, or year/location" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>4 · Experience</h2>
+      <label>Most recent employer</label><input type="text" name="Employer 1" />
+      <div class="row">
+        <div><label>Job title</label><input type="text" name="Title 1" /></div>
+        <div><label>Dates (from–to)</label><input type="text" name="Dates 1" /></div>
+      </div>
+      <div class="row">
+        <div><label>Trade / duties</label><input type="text" name="Duties 1" /></div>
+        <div><label>May we contact?</label>
+          <select name="Contact Employer 1"><option></option><option>Yes</option><option>No</option></select>
+        </div>
+      </div>
+      <label>Previous employer</label><input type="text" name="Employer 2" />
+      <div class="row">
+        <div><label>Job title</label><input type="text" name="Title 2" /></div>
+        <div><label>Dates (from–to)</label><input type="text" name="Dates 2" /></div>
+      </div>
+      <div class="row">
+        <div><label>Years — solar / PV</label><input type="text" name="Years Solar" /></div>
+        <div><label>Years — electrical</label><input type="text" name="Years Electrical" /></div>
+      </div>
+      <div class="row">
+        <div><label>Years — construction</label><input type="text" name="Years Construction" /></div>
+        <div><label>Highest education</label><input type="text" name="Highest Education" /></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>5 · Certifications, Licenses &amp; Equipment</h2>
+      <div class="checks">
+        <label class="check"><input type="checkbox" name="Certs[]" value="OSHA 10" /> OSHA 10</label>
+        <label class="check"><input type="checkbox" name="Certs[]" value="OSHA 30" /> OSHA 30</label>
+        <label class="check"><input type="checkbox" name="Certs[]" value="Electrical License" /> Electrical license</label>
+        <label class="check"><input type="checkbox" name="Certs[]" value="Forklift" /> Forklift</label>
+        <label class="check"><input type="checkbox" name="Certs[]" value="Skid Steer" /> Skid steer</label>
+        <label class="check"><input type="checkbox" name="Certs[]" value="Excavator" /> Excavator</label>
+        <label class="check"><input type="checkbox" name="Certs[]" value="Dozer" /> Dozer</label>
+      </div>
+      <label>Electrical license #</label><input type="text" name="Electrical License Number" />
+      <label>Other (list)</label><input type="text" name="Other Certs" />
+    </section>
+
+    <section>
+      <h2>6 · Site Conditions</h2>
+      <p class="note">This project involves outdoor work in heat, cold, wind, and sun; lifting up to 50 lbs repeatedly; standing, kneeling, and climbing; work at heights on racking, roofs, or lifts; and possible overtime or weekend shifts.</p>
+      <label>I can perform these essential functions with or without reasonable accommodation. *</label>
+      <select name="Can Perform Essential Functions" required>
+        <option value="">Select</option><option>Yes</option><option>No</option>
+      </select>
+      <label>Accommodation needed (if any)</label><input type="text" name="Accommodation Needed" />
+    </section>
+
+    <section>
+      <h2>7 · Certification</h2>
+      <p class="note">I certify that the information on this application is true and complete. False or omitted information may result in refusal to hire or termination. I authorize verification of this information, contact with prior employers and references, and a background check and drug screen as permitted by law. If hired I will be an at-will employee; this form is not a contract. Any offer is contingent on Form I-9 work-authorization verification and project requirements.</p>
+      <label class="check"><input type="checkbox" name="Certification" value="I agree" required /> I agree and certify the above is true. *</label>
+      <label>Typed full name (signature) *</label><input type="text" name="Signature" required />
+    </section>
+
+    <div class="actions">
+      <button type="submit">Submit application</button>
+    </div>
+  </form>
+  <footer>Equal Opportunity Employer. All qualified applicants are considered without regard to race, color, religion, sex, national origin, age, disability, veteran status, or any other protected status.</footer>
+</body>
+</html>
